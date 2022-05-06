@@ -12,6 +12,10 @@ RSpec.describe Product, type: :model do
       expect(subject.name).to eq 'Medicament'
     end
 
+    it 'should got a associated category' do
+      expect(subject.category.name).to eq 'Birth Control'
+    end
+
     it 'NDC must be only number and hyphens' do
       subject.ndc = 'a'
       expect(subject.save).to be false
