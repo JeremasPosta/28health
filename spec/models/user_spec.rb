@@ -13,7 +13,7 @@ RSpec.describe User, type: :model do
     end
 
     it 'should got a associated state' do
-      expect(State.find_by_id(subject.state_id).name).to eq 'Alabama'
+      expect(subject.state.name).to eq 'Alabama'
     end
     
     it 'name cannot be blank' do

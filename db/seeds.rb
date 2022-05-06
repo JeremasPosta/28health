@@ -22,11 +22,11 @@ end
 states = State.all
 users =
   [
-    { full_name: 'Rebekah Ramos', email: 'rebekah.ramos@example.com', date_of_birth: '1991-12-29', state_id: states.sample.id },
-    { full_name: 'Katie Gray', email: 'katie.gray@example.com', date_of_birth: '1992-12-29', state_id: states.sample.id },
-    { full_name: 'Mary Rice', email: 'mary.rice@example.com', date_of_birth: '1993-12-29', state_id: states.sample.id },
-    { full_name: 'Joyce Flores', email: 'joyce.flores@example.com', date_of_birth: '1994-12-29', state_id: states.sample.id },
-    { full_name: 'Rosie Murphy', email: 'rosie.murphy@example.com', date_of_birth: '2010-12-29', state_id: states.sample.id }
+    { full_name: 'TEST USER Rebekah Ramos', email: 'rebekah.ramos@example.com', date_of_birth: '1991-12-29', state: states.sample },
+    { full_name: 'TEST USER Katie Gray', email: 'katie.gray@example.com', date_of_birth: '1992-12-29', state: states.sample },
+    { full_name: 'TEST USER Mary Rice', email: 'mary.rice@example.com', date_of_birth: '1993-12-29', state: states.sample },
+    { full_name: 'TEST USER Joyce Flores', email: 'joyce.flores@example.com', date_of_birth: '1994-12-29', state: states.sample },
+    { full_name: 'TEST USER Rosie Murphy', email: 'rosie.murphy@example.com', date_of_birth: '2010-12-29', state: states.sample }
   ]
 
 users.each do |user|
