@@ -1,6 +1,6 @@
 # TwentyEight Health Challenge
 
-* Ruby version `2.7.2`
+* Ruby version `2.7.2` OR `3.0.4`
 
 * Rails version `6.1.3`, an update was done to repair MimeMagic
 
