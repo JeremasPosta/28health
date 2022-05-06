@@ -4,10 +4,6 @@ RSpec.describe Product, type: :model do
   subject { create :product }
 
   context 'on creation' do
-    it 'must exist' do
-      expect(subject).to_not be false
-    end
-
     it 'should got a name attribute' do
       expect(subject.name).to eq 'Medicament'
     end

@@ -4,10 +4,6 @@ RSpec.describe User, type: :model do
   subject { create :user }
 
   context 'on creation' do
-    it 'must exist' do
-      expect(subject).to_not be false
-    end
-
     it 'should got a full_name attribute' do
       expect(subject.full_name).to eq 'Keith Richards'
     end
@@ -39,7 +35,7 @@ RSpec.describe User, type: :model do
     it 'cant add a product twice' do
       product = create :product
       subject.products << product
-      expect { subject.products << product }.to raise_error
+      expect { subject.products << product }.to raise_error(ActiveRecord::RecordNotUnique)
       expect(subject.products.count).to eq 1
     end
 
@@ -53,7 +49,7 @@ RSpec.describe User, type: :model do
         category: product.category
         )
       subject.products << product
-      expect { subject.products << other_product }.to raise_error
+      expect { subject.products << other_product }.to raise_error(ActiveRecord::RecordNotUnique)
       expect(subject.products.count).to eq 1
     end
   end
