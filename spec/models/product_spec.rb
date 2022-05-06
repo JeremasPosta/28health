@@ -4,8 +4,8 @@ RSpec.describe Product, type: :model do
   subject { create :product }
 
   context 'on creation' do
-    it 'must be true' do
-      expect(subject).to_not be nil
+    it 'must exist' do
+      expect(subject).to_not be false
     end
 
     it 'should got a name attribute' do
