@@ -115,14 +115,3 @@ The tests are basic, just to let me code with confidence.
 
 Also, the management of the Products related to Users isn't the best.
 
-
-This probably ends up in a bit complex queries, but, with the right defined scopes, is at least extensible. I'm not sure how maintainable this can get across time.
-
-
-### Improvements needed
-
-I know this can be very improved.
-
-The tests are basic, just to let me code with confidence.
-
-Also, the management of the Products related to Users isn't the best.
